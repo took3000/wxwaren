@@ -18,9 +18,60 @@ var _hmt = _hmt || [];
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"K2Ty4IEpHOFWddJN",ck:"K2Ty4IEpHOFWddJN"});
 </script>
     
+<style>
+     .bgimggggg{
+ 2     position:fixed;
+ 3     top: 0;
+ 4     left: 0;
+ 5     width:100%;
+ 6     height:100%;
+ 7     min-width: 1000px;
+ 8     z-index:-10;
+ 9     zoom: 1;
+10     background-color: #fff;
+11     background: url(../img/bg_login.jpg) no-repeat;
+12     background-size: cover;
+13     -webkit-background-size: cover;
+14     -o-background-size: cover;
+15     background-position: center 0;
+16 }
+    
+    
+@-webkit-keyframes scrollToUp {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -258px;  // 向上滚动则就是图片的高度的负值，否则为图片的宽度，也可以百分比
+    }
+  }
+  @keyframes scrollToUp {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -258px;
+    }
+  }
+    
+#imgBgc{
+    height: 1000px;
+    background-image: url("https://pic3.zhimg.com/80/v2-9aa66f139e0795698b00ee1fad7dfea4_r.jpg"); /* 什么图片都可以*/
+    background-attachment: fixed; /* 让背景图片和文本脱离*/
+    background-position: center center;
+    -webkit-animation: scrollToUp 5s linear infinite; /* 引入 scrollToUp动画  linear 表示匀速执行动画可避免卡顿*/
+    animation: scrollToUp 5s linear infinite;
+  }
+
+    </style>
+    
 </head>
 <body>
-
+<div class="bag">
+      <div id="imgBgc">
+        <p></p>
+      </div>
+    </div>
     
     <script type="text/javascript">
  function jump(){
